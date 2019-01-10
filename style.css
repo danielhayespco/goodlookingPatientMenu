@@ -50,9 +50,9 @@ body {
 }
 
 #titleHeading {
-	color: darkred;
+	color: #dc3545;
 	font-size: 26px;
-	padding-top: 10;
+	padding-top: 20px;
 }
 
 #numOfPatients {
