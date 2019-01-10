@@ -1,0 +1,105 @@
+<!doctype html>
+  <head>
+   <title>Patient Menu</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body ng-app="myApp">
+	<div id="patientMenu" ng-controller="PatientController">
+	
+
+		<!-- Advanced Search Modal -->
+		<div class="modal fade" id="advancedSearchModal" tableindex="-1" role="dialog" aria-labelledby="advancedSearchModalText" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">ADVANCED SEARCH</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<!-- Advanced Search Input Fields -->
+						<form>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">MR #:</label>
+								<div class="col-sm-10 float-right">
+									<input type="text" class="form-control" id="mrInput">
+								</div>
+							</div>
+							<div class="form-group row">
+			    				<label class="col-sm-2 col-form-label">NAME:</label>
+			    				<div class="col-sm-10 float-right">
+			      					<input type="text" class="form-control" id="nameInput">
+			    				</div>
+  			  				</div>
+							<div class="form-group row">
+			    				<label class="col-sm-3 col-form-label">PROVIDER:</label>
+			    				<div class="col-sm-9 float-right">
+			      					<input type="text" class="form-control" id="providerInput">
+			    				</div>
+  			  				</div>
+							<div class="form-group row">
+  			    				<label class="custom-control custom-radio" id="orderLable">ORDER:</label>
+				  					<input id="ascButton" name="radioButton" type="radio">
+				  					<span class="custom-control-indicator"></span>
+				  					<span class="custom-control-description">ASC</span>
+				
+								<label class="custom-control custom-radio">
+				  					<input id="descButton" name="radioButton" type="radio">
+				  					<span class="custom-control-indicator"></span>
+				  					<span class="custom-control-description">DESC</span>
+			    				</label>
+			  				</div>
+			  				<div class="form-group row">
+				  				<label class="col-sm-3" for="orderBy">ORDER BY:</label>
+				  				<select class="form-control col-sm-8" id="orderBy">
+								    <option>NAME</option>
+								    <option>PROV</option>
+								    <option>ID NUM</option>
+								    <option>MR</option>
+								    <option>INSURANCE</option>
+								    <option>ADDRESS</option>
+								    <option>CITY</option>
+								    <option>ST</option>
+								    <option>PHONE</option>
+								    <option>DOB</option>
+								    <option>ADMIT</option>
+								    <option>DC</option>
+				  				</select>
+			  				</div>
+			  				<div class="form-group row">
+			    				<label class="col-sm-8 col-form-label">LIMIT TO:</label>
+			    				<div class="col-sm-4 float-right">
+			      					<input type="text" class="form-control" id="limitInput">
+			    				</div>
+  			  				</div>
+
+							<!-- modal buttons -->
+							<button type="button" id="resetButton" class="btn btn-warning">RESET</button>
+              				<button type="submit" id="searchButton" class="btn btn-danger float-right">SEARCH</button>
+              				<button type="button" id="cancelButton" class="btn btn-secondary float-right" data-dismiss="modal">CANCEL</button>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+	<!-- Patient Menu Table -->
+
+	</div>
+
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+ 	<script src="app.js"></script>
+
+  </body>
+
+</html>
