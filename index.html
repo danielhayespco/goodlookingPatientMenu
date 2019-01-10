@@ -2,7 +2,7 @@
   <head>
    <title>Patient Menu</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="style.css">
   </head>
 
   <body ng-app="myApp">
@@ -115,19 +115,19 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>name</td>
-				<td>prov</td>
-				<td>idnum</td>
-				<td>mr</td>
-				<td>insurance</td>
-				<td>address</td>
-				<td>city</td>
-				<td>st</td>
-				<td>phone</td>
-				<td>dob</td>
-				<td>admit</td>
-				<td>dc</td>
+			<tr ng-repeat="patient in patients">
+				<td>{{patient.name}}</td>
+				<td>{{patient.prov}}</td>
+				<td>{{patient.idnum}}</td>
+				<td>{{patient.mr}}</td>
+				<td>{{patient.insurance}}</td>
+				<td>{{patient.address}}</td>
+				<td>{{patient.city}}</td>
+				<td>{{patient.st}}</td>
+				<td>{{patient.phone}}</td>
+				<td>{{patient.dob}}</td>
+				<td>{{patient.admit}}</td>
+				<td>{{patient.dc}}</td>
 			</tr>
 		</tbody>
 	</table>
