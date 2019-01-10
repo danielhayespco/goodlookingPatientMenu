@@ -43,3 +43,19 @@ body {
          text-align: left;
          border: 1px solid darkgray;
  }
+
+ #patientMenu {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#titleHeading {
+	color: darkred;
+	font-size: 26px;
+	padding-top: 10;
+}
+
+#numOfPatients {
+	color: #3d3d3d;
+	font-weight: bold;
+}
