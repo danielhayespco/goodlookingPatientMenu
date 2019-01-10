@@ -19,3 +19,27 @@ body {
  #searchButton {
  		margin-left:5px;
  }
+
+ hr {
+     border: none;
+     height: 5px;
+     background-color: #eee;
+ }
+
+ table {
+         border-collapse: collapse;
+         width: 100%;
+         border: 1px solid darkgray; 
+ }
+ th {
+         background-color: #dc3545;
+         color: white;
+         padding: 8px;
+         text-align: left;
+         border: 1px solid darkgray;
+ }
+ td {
+         padding: 8px;
+         text-align: left;
+         border: 1px solid darkgray;
+ }
